@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1">
+    <parameter name="deviceUrl" value="http://127.0.0.1:1350/wd/hub"/>
+    <parameter name="deviceName" value="emulator-5554"/>
+    <!--basic auth token-->
+    <parameter name="inviteToken" value="gslmTZZW2TQPuKRoFfAIHX4o2ouKsU"/>
+    <!--id of android emulator docker image-->
+    <parameter name="imageId" value="company.app.v23:latest"/>
+    <test name="BasicAndroidTest">
+        <classes>
+            <!--keep welcome tests on top due to issues with apk reset on emulator devices-->
+            <class name="com.company.app.tests.stories.WelcomePageTest"/>
+            <class name="com.company.app.tests.stories.MainFlowTest"/>
+        </classes>
+    </test>
+</suite>

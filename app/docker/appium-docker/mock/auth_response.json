@@ -1,0 +1,11 @@
+{
+  "access_token": "eyJhbGciOiJIUzI1NiJ9.eyJleHRlbmRlZF9pbmZvIjp7Imxhc3ROYW1lIjoiICJ9LCJhdWQiOlsicGFzc3dvcmQiLCJ1YWEiLCJ1c2VyX2luZm8iLCJvcGVuaWQiLCJ0b2tlbnMiXSwiYWNjb3VudF90eXBlIjoiSU5URVJOQUxfQUQiLCJ1c2VyX25hbWUiOiJudWxsICAiLCJzY29wZSI6W10sImV4cCI6MjExODgyNDA0MSwiZW1haWwiOiJnbGVidUBtYWlsaW5hdG9yLmNvbSIsInVzZXJfcHJvZmlsZV9pZCI6IjRlM2Y2NTBhLWFkYzYtNDAzMy04ZTE1LTQ0ODlmMjA0ZWU0NSIsImp0aSI6Ijg3NTY3MWI1LTJkYTItNGQ1OS1iY2ZlLTdjYTgwYmI0OGExMCIsImNsaWVudF9pZCI6IkFydGlzdENoYXJ0c01vYmlsZSJ9.2RL_swJoPfn34B-B0NvUb0m58CoHtcmDfGhWKPNp6WI",
+  "token_type": "bearer",
+  "refresh_token": "5c116cc2-7a62-4ba2-9b14-5e0345c65779",
+  "expires_in": 565661977,
+  "jti": "875671b5-2da2-4d59-bcfe-7ca80bb48a10",
+  "extended_info": {
+    "lastName": " "
+  },
+  "account_type": "INTERNAL_AD"
+}

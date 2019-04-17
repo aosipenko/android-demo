@@ -1,0 +1,32 @@
+plugins {
+    id "io.qameta.allure" version "2.7.0"
+    id "java"
+}
+
+dependencies {
+    testImplementation group: 'org.testng', name: 'testng', version: '6.14.3'
+    testImplementation group: 'io.appium', name: 'java-client', version: '4.1.2'
+    testImplementation group: 'org.hamcrest', name: 'hamcrest-all', version: '1.3'
+    testImplementation group: 'org.json', name: 'json', version: '20090211'
+    testImplementation group: 'io.qameta.allure', name: 'allure-gradle', version: '2.5'
+    testImplementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.10.0'
+    testImplementation group: 'com.github.docker-java', name: 'docker-java', version: '3.1.1'
+}
+
+allure {
+    version = '2.5'
+    autoconfigure = true
+    aspectjweaver = true
+    allureJavaVersion = '1.3.9'
+}
+
+test {
+    println 'start tests'
+    useTestNG() {
+        println 'validate file'
+        assert file("./src/test/res/testng.xml").exists()
+        suites "./src/test/res/testng.xml"
+        println 'done tests'
+    }
+    println 'end tests'
+}
